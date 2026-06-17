@@ -12,27 +12,27 @@ footer img {
 }
 
 footer img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .semana {
     background: #f9f9f9;
     border: 2px solid #9f16b4;
     border-radius: 15px;
-    margin: 20px;
+	padding: 20px;
+    margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Arial, sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .semana:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -41,37 +41,38 @@ body {
 body {
     display: flex;
     flex-direction: column;
+	text-align: center;
     background-color: rgb(35, 35, 65);
 }
 
 header {
     padding: 20px;
     background-color: yellow;
-    color: black;
+    color: white;
 }
 
 main {
-    flex-grow: 1;
-    width: 1400px;
+	max-width: 1400px;
+    width: 1300px;
     margin: 0 auto;
     padding: 20px;
     background: white;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: black;
-    color: white;
+    padding: 15px, 60px;
+    background-color: lightblue;
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        width: auto;
-        padding: 10px;
+@media(max-width: 680px) {
+    footer{
+        flex-direction: column;
+		grap: 15px;
+		padding: 20px;
     }
 }
