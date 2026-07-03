@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-direction: column;
 	text-align: center;
-    background-color: rgb(35, 35, 65);
+    background-color: rgba(160, 32, 240, 0.3);
 }
 
 header {
@@ -53,18 +53,19 @@ header {
 
 main {
 	max-width: 1400px;
-    width: 1300px;
+    width: 1100px;
     margin: 0 auto;
     padding: 20px;
     background: white;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(160,32,240,0.3);
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+	border-top: 3px solid black;
     padding: 15px, 60px;
     background-color: lightblue;
 }
